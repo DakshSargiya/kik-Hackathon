@@ -1,4 +1,3 @@
-import json
 from flask import Flask
 from flask import request
 from mainProcess import getOptions
@@ -20,3 +19,7 @@ def hello_world():
         # return do_the_login()
     else:
         return "<p>Hello, World!</p>"
+
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
